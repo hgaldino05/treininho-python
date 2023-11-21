@@ -60,7 +60,7 @@ def filme_cadastrado(titulo):
     return False
 
 def listar_filmes():
-    with open("filmes.csv", "r") as arquivo:
+    with open("filmes.csv", "r", encoding="utf-8") as arquivo:
         filmes = arquivo.readlines()
 
     for i, linha in enumerate(filmes):
